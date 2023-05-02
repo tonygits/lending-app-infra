@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: test-lending-svc
-          image: mrgitau/test-lending-svc:4914fce2336438bf5786c4220e3bcc8468e11c7d
+          image: mrgitau/test-lending-svc:02f84cc18346123980e45d0914688fb89dfec69c
           imagePullPolicy: Always
           ports:
             - containerPort: 8001
