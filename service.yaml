@@ -7,7 +7,7 @@ spec:
   selector:
     app: test-lending-svc
   ports:
-    - port: 8000
+    - port: 8002
       protocol: TCP
-      targetPort: 8001
+      targetPort: 8099
       nodePort: 31000
