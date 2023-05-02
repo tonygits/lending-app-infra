@@ -17,4 +17,4 @@ spec:
           image: mrgitau/test-lending-svc:028159e
           imagePullPolicy: Always
           ports:
-            - containerPort: 8001
+            - containerPort: 8099
