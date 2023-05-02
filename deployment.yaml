@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-lending-svc
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-lending-svc
+  template:
+    metadata:
+      labels:
+        app: test-lending-svc
+    spec:
+      containers:
+        - name: test-lending-svc
+          image: mrgitau/test-lending-svc-:604ac3b39a717bbceb7e0386debaed67fd7857bb
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8001
