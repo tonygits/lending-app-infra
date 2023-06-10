@@ -4,6 +4,7 @@ metadata:
   name: test-lending-svc
 spec:
   type: LoadBalancer
+  loadBalancerIP: 139.59.196.150
   ports:
     - port: 80
       protocol: TCP
