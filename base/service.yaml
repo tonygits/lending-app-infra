@@ -4,7 +4,8 @@ metadata:
   name: test-lending-svc
 spec:
   type: NodePort
-  loadBalancerIP: 139.59.196.150
+  externalIPs:
+    - 139.59.196.150
   ports:
     - port: 80
       protocol: TCP
