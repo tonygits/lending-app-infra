@@ -1,15 +1,14 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-staging
-  namespace: staging
+  name: ingress-production
 spec:
   tls:
     - hosts:
         - "*.rentbureaukenya.com"
       secretName: rentbureaukenya.com
   rules:
-    - host: lending.rentbureaukenya.com
+    - host: production.rentbureaukenya.com
       http:
         paths:
           - path: /
@@ -19,7 +18,7 @@ spec:
                 name: test-lending-svc
                 port:
                   number: 80
-    - host: main.rentbureaukenya.com
+    - host: transfer.rentbureaukenya.com
       http:
         paths:
           - path: /

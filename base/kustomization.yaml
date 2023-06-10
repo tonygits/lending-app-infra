@@ -4,6 +4,9 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - cert-manager-wcard-issuer.yaml
+  - cert-manager-wcard-certificate.yaml
+  - wildcard-host.yaml
 
 commonLabels:
   app: test-lending-svc
