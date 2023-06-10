@@ -9,6 +9,7 @@ namespace: staging
 patchesStrategicMerge:
   - replicas.yaml
   - image.yaml
+  - service-port.yaml
 
 configMapGenerator:
   - name: lending-app-properties
