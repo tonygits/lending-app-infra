@@ -16,7 +16,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: test-lending-svc-v1
+                name: test-lending-svc
                 port:
                   number: 80
     - host: main.rentbureaukenya.com
@@ -26,7 +26,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: test-lending-svc-v1
+                name: test-lending-svc
                 port:
                   number: 80
   ingressClassName: nginx
