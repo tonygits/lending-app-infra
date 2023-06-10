@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: test-lending-svc
-          image: mrgitau/test-lending-stage-svc:f9ee81b
+          image: mrgitau/test-lending-stage-svc:4660b36
 
 
 
