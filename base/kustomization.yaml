@@ -6,12 +6,8 @@ resources:
   - service.yaml
 
 commonLabels:
-  app: lending-svc
+  app: test-lending-svc
 
 commonAnnotations:
-  app: test-lending
+  app: test-lending-svc
 
-namePrefix:
-  test-
-nameSuffix:
-  -v1

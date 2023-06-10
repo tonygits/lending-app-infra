@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lending-svc
+  name: test-lending-svc
 spec:
   replicas: 1
   template:
