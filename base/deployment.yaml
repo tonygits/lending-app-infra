@@ -1,16 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-lending-svc
+  name: lending-svc
 spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: test-lending-svc
+  replicas: 1
   template:
-    metadata:
-      labels:
-        app: test-lending-svc
     spec:
       containers:
         - name: test-lending-svc
@@ -18,3 +12,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8099
+          envFrom:
+            - configMapRef:
+                name: lending-app-properties
