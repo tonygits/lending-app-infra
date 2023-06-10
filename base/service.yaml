@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: test-lending-svc
 spec:
-  type: LoadBalancer
+  type: NodePort
   loadBalancerIP: 139.59.196.150
   ports:
     - port: 80
