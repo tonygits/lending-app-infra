@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lending-svc-ingress
+spec:
+  rules:
+    - host: production.rentbureaukenya.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: test-lending-svc
+                port:
+                  number: 80
+    - host: transfer.rentbureaukenya.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: test-lending-svc
+                port:
+                  number: 80
