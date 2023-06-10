@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-staging
+  namespace: staging
+spec:
+  tls:
+    - hosts:
+        - "*.rentbureaukenya.com"
+      secretName: rentbureaukenya.com
+  rules:
+    - host: lending.rentbureaukenya.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: test-lending-svc-v1
+                port:
+                  number: 80
+    - host: main.rentbureaukenya.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: test-lending-svc-v1
+                port:
+                  number: 80
+  ingressClassName: nginx

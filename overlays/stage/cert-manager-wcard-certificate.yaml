@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: rentbureaukenya.com
+  namespace: staging
+spec:
+  secretName: rentbureaukenya.com
+  issuerRef:
+    name: letsencrypt-dev-wcard
+    kind: Issuer
+    group: cert-manager.io
+  commonName: "*.rentbureaukenya.com"
+  dnsNames:
+    - "rentbureaukenya.com"
+    - "*.rentbureaukenya.com"
