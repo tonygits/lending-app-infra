@@ -5,7 +5,7 @@ metadata:
 spec:
   secretName: rentbureaukenya.com
   issuerRef:
-    name: letsencrypt-dev-wcard
+    name: letsencrypt-nginx-wcard
     kind: Issuer
     group: cert-manager.io
   commonName: "*.rentbureaukenya.com"

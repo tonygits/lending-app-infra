@@ -8,6 +8,6 @@ spec:
       containers:
         - name: test-lending-svc
           image: mrgitau/test-lending-stage-svc:fbf5a21
-
+          imagePullPolicy: Always
 
 

@@ -3,5 +3,5 @@ kind: Deployment
 metadata:
   name: test-lending-svc
 spec:
-  replicas: 2
+  replicas: 1
 

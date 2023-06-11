@@ -3,13 +3,10 @@ kind: Deployment
 metadata:
   name: test-lending-svc
 spec:
-  replicas: 1
   template:
     spec:
       containers:
         - name: test-lending-svc
-          image: mrgitau/test-lending-svc:e2a5d4d
-          imagePullPolicy: Always
           ports:
             - containerPort: 8099
           envFrom:
