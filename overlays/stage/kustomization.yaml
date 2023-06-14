@@ -13,7 +13,7 @@ replicas:
 images:
   - name: mrgitau/test-lending-svc
     newName: mrgitau/test-lending-stage-svc
-    newTag: 8edd004
+    newTag: 3b0d5b8
 
 patchesStrategicMerge:
   - url-links.yaml
