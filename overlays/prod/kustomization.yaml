@@ -6,9 +6,16 @@ resources:
 
 namespace: production
 
+replicas:
+  - name: test-lending-svc
+    count: 5
+
+images:
+  - name: mrgitau/test-lending-svc
+    newName: mrgitau/test-lending-prod-svc
+    newTag: 6f9f592
+
 patchesStrategicMerge:
-  - replicas.yaml
-  - image.yaml
   - url-links.yaml
 
 configMapGenerator:
